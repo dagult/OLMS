@@ -49,7 +49,7 @@ header('location:manage-books.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Books</h4>
+                <h4 class="header-line"><!-- Manage Books --></h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
@@ -111,13 +111,13 @@ header('location:manage-books.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Book Name</th>
-                                            <th>Category</th>
-                                            <th>Author</th>
-                                            <th>ISBN</th>
-                                            <th>Price</th>
-                                            <th>Action</th>
+                                            <th>NO</th>
+                                            <th>NAMA BUKU</th>
+                                            <th>KATEGORI</th>
+                                            <th>NOMOR</th>
+                                            <th>TAHUN</th>
+                                            <th>KODE</th>
+                                            <th>AKSI</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -134,8 +134,8 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($cnt);?></td>
                                             <td class="center"><?php echo htmlentities($result->BookName);?></td>
                                             <td class="center"><?php echo htmlentities($result->CategoryName);?></td>
-                                            <td class="center"><?php echo htmlentities($result->AuthorName);?></td>
                                             <td class="center"><?php echo htmlentities($result->ISBNNumber);?></td>
+                                            <td class="center"><?php echo htmlentities($result->AuthorName);?></td>                                     
                                             <td class="center"><?php echo htmlentities($result->BookPrice);?></td>
                                             <td class="center">
 

@@ -49,7 +49,7 @@ header('location:manage-authors.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Authors</h4>
+                <h4 class="header-line">Kelola Tahun</h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
@@ -111,12 +111,12 @@ header('location:manage-authors.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Author</th>
+                                            <th>No</th>
+                                            <th>Tahun</th>
                                          
-                                            <th>Creation Date</th>
-                                            <th>Updation Date</th>
-                                            <th>Action</th>
+                                            <th>Tulis Tanggal</th>
+                                            <th>Ubah Tanggal</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>

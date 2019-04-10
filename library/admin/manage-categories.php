@@ -49,7 +49,7 @@ header('location:manage-categories.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Categories</h4>
+                <h4 class="header-line">Kelola Kategori</h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
@@ -111,12 +111,12 @@ header('location:manage-categories.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Category</th>
+                                            <th>No</th>
+                                            <th>Kategori</th>
                                             <th>Status</th>
-                                            <th>Creation Date</th>
-                                            <th>Updation Date</th>
-                                            <th>Action</th>
+                                            <th>Tulis Tanggal</th>
+                                            <th>Ubah Tanggal</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -39,7 +39,7 @@ else{
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Manage Issued Books</h4>
+                <h4 class="header-line">Kelola Buku Keluar</h4>
     </div>
      <div class="row">
     <?php if($_SESSION['error']!="")
@@ -85,20 +85,20 @@ else{
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                          Issued Books 
+                          Buku Keluar 
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Student Name</th>
-                                            <th>Book Name</th>
-                                            <th>ISBN </th>
-                                            <th>Issued Date</th>
-                                            <th>Return Date</th>
-                                            <th>Action</th>
+                                            <th>No</th>
+                                            <th>Nama Peminjam</th>
+                                            <th>Nama Buku</th>
+                                            <th>Kode</th>
+                                            <th>Tanggal Keluar</th>
+                                            <th>Tanggal Kembali</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -119,7 +119,7 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($result->IssuesDate);?></td>
                                             <td class="center"><?php if($result->ReturnDate=="")
                                             {
-                                                echo htmlentities("Not Return Yet");
+                                                echo htmlentities("Belum Kembali");
                                             } else {
 
 

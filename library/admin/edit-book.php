@@ -58,7 +58,7 @@ header('location:manage-books.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Add Book</h4>
+                <h4 class="header-line">Tambahkan Buku</h4>
                 
                             </div>
 
@@ -67,7 +67,7 @@ header('location:manage-books.php');
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
 <div class="panel panel-info">
 <div class="panel-heading">
-Book Info
+Info Buku
 </div>
 <div class="panel-body">
 <form role="form" method="post">
@@ -85,12 +85,12 @@ foreach($results as $result)
 {               ?>  
 
 <div class="form-group">
-<label>Book Name<span style="color:red;">*</span></label>
+<label>Nama Buku<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="bookname" value="<?php echo htmlentities($result->BookName);?>" required />
 </div>
 
 <div class="form-group">
-<label> Category<span style="color:red;">*</span></label>
+<label>Kategori<span style="color:red;">*</span></label>
 <select class="form-control" name="category" required="required">
 <option value="<?php echo htmlentities($result->cid);?>"> <?php echo htmlentities($catname=$result->CategoryName);?></option>
 <?php 
@@ -118,7 +118,7 @@ else
 
 
 <div class="form-group">
-<label> Author<span style="color:red;">*</span></label>
+<label>Tahun<span style="color:red;">*</span></label>
 <select class="form-control" name="author" required="required">
 <option value="<?php echo htmlentities($result->athrid);?>"> <?php echo htmlentities($athrname=$result->AuthorName);?></option>
 <?php 
@@ -143,13 +143,13 @@ continue;
 </div>
 
 <div class="form-group">
-<label>ISBN Number<span style="color:red;">*</span></label>
+<label>Nomer<span style="color:red;">*</span></label>
 <input class="form-control" type="text" name="isbn" value="<?php echo htmlentities($result->ISBNNumber);?>"  required="required" />
-<p class="help-block">An ISBN is an International Standard Book Number.ISBN Must be unique</p>
+<!-- <p class="help-block">An ISBN is an International Standard Book Number.ISBN Must be unique</p> -->
 </div>
 
  <div class="form-group">
- <label>Price in USD<span style="color:red;">*</span></label>
+ <label>Kode<span style="color:red;">*</span></label>
  <input class="form-control" type="text" name="price" value="<?php echo htmlentities($result->BookPrice);?>"   required="required" />
  </div>
  <?php }} ?>

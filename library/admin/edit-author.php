@@ -51,7 +51,7 @@ header('location:manage-authors.php');
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">Add Number</h4>
+                <h4 class="header-line">Tambahkan Tahun</h4>
                 
                             </div>
 
@@ -60,12 +60,12 @@ header('location:manage-authors.php');
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
 <div class="panel panel-info">
 <div class="panel-heading">
-Author Info
+Info Tahun
 </div>
 <div class="panel-body">
 <form role="form" method="post">
 <div class="form-group">
-<label>Author Name</label>
+<label>Tahun</label>
 <?php 
 $athrid=intval($_GET['athrid']);
 $sql = "SELECT * from  tblauthors where id=:athrid";
@@ -82,7 +82,7 @@ foreach($results as $result)
 <?php }} ?>
 </div>
 
-<button type="submit" name="update" class="btn btn-info">Update </button>
+<button type="submit" name="update" class="btn btn-info">Memperbaharui </button>
 
                                     </form>
                             </div>
